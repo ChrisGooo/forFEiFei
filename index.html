@@ -53,14 +53,16 @@
   <script>
     var btn1 = document.querySelector('#laogong');
     var btn2 = document.querySelector('#jiubu');
+    var message1 = '<span>老婆乖！</span>';
+    var message2 = '<span>再给你一次机会！</span>';
 
-    btn1.addEventListener('touchstart',function () {
-      Materialize.toast('老婆乖！', 3000, 'rounded');
-    },false);
+    btn1.addEventListener('click',function () {
+      Materialize.toast(message1, 3000, 'rounded');
+    });
 
-    btn2.addEventListener('touchstart',function () {
-      Materialize.toast('再给你一次机会！', 3000, 'rounded');
-    },false);
+    btn2.addEventListener('click',function () {
+      Materialize.toast(message2, 3000, 'rounded');
+    });
   </script>
 </body>
 </html>
