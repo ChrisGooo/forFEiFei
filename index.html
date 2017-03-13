@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>来，叫老公</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <style media="screen">
+    html {
+      font-size: 16px;
+      text-align: justify;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    .clear {
+      clear: both;
+      visibility: hidden;
+      overflow: hidden;
+      height: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="padding-bottom: 40px;">
+    <h2>给斐宝宝的一封小情书</h2>
+    <span class="new badge left pink lighten-1" style="margin-left:0;">么么哒</span>
+    <p class="clear">.</p>
+    <p>10点从床上爬下来，恍恍惚惚刷牙洗脸，喝了点水，突然想给你写一封小情书，哈哈哈。老实说这不是我第一次用 Web 的形式给别人写情书，但是咱们只认识了一天，我就有这种冲动，真的很特别。</p>
+    <p>在栈美有三个瞬间我十分心动：</p>
+    <ul>
+      <li>你舔我脖子的时候我问你为什么这么爱舔我呢，你说这时候心理上很高兴，像是占有了我。</li>
+      <li>我问你还要不要再来的时候，你说等我属于你。</li>
+      <li>我又问你还要不要再来的时候，你这次点点头。</li>
+    </ul>
+    <p>很高兴宝宝对我有占有欲，就像我对你一样。也是因为这样，才有拍三下屁股约定好的契约嘻嘻。</p>
+    <p>也许以后我们会相隔一个半球，我还没考虑到那个时候。未来捉摸不定，但是现在，此时此刻，我是如此想念你。想念你的怀抱，想念你的XST，想念你跟我说话，想念你叫我LG... 我还希望时间可以延长下去，很久很久。</p>
+    <p>还记得有一天我问你，如何形容一个女生美。在昨晚我找到了最好的答案：</p>
+    <p>像你。</p>
+    <div class="divider"></div>
+
+    <div class="section" style="text-align:center">
+      <p>来，叫老公</p>
+      <button id="laogong" class="pink-text text-lighten-1 waves-effect waves-purple btn-flat" type="button" name="button">老公~</button>
+      <button id="jiubu" class="pink-text text-lighten-1 waves-effect waves-pink btn-flat" type="button" name="button">就不~</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js" charset="utf-8"></script>
+  <script>
+    var btn1 = document.querySelector('#laogong');
+    var btn2 = document.querySelector('#jiubu');
+
+    btn1.addEventListener('touchstart',function () {
+      Materialize.toast('老婆乖！', 3000, 'rounded');
+    },false);
+
+    btn2.addEventListener('touchstart',function () {
+      Materialize.toast('再给你一次机会！', 3000, 'rounded');
+    },false);
+  </script>
+</body>
+</html>
